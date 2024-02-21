@@ -1,0 +1,31 @@
+programa
+ {
+	
+	funcao inicio()
+ {
+		real resul1,resul2,maca,morango,somatotal,desconto,kilos
+		//Resultado da maça
+		escreva("Quantos kilos de maça? ")
+		leia(maca)
+		se (maca<=5){
+			resul1=maca*1.80
+		}
+		senao
+		resul1=maca*1.50
+		//Resultado do morango
+		escreva("\nQuantos kilos de morango? ")
+		leia(morango)
+		se(morango<=5)
+		resul2=morango*2.50
+		senao 
+		resul2=morango*2.20
+		//Definição de calcúlos
+		somatotal=resul1+resul2
+		desconto=somatotal-(somatotal*0.1)
+		//Possibilidades do desconto
+		se(morango+maca>8 ou somatotal>=25)
+		escreva(desconto)
+		senao
+		escreva(somatotal)
+	}
+}
