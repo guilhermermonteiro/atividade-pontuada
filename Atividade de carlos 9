@@ -1,0 +1,34 @@
+programa
+ {
+	
+	funcao inicio()
+ {
+	real rendamensal, valordeemprestimo , limitedovalordoemprestimo , limitedevalordeprestacao , valorprestacao , limitedovaloremprestimo , limitedeprestacoes
+	inteiro numerodeprestacoes
+	
+	//Solicitando dados do usúario
+	escreva("Digite sua renda mensal:")
+	leia(rendamensal)
+	escreva("Digite o valor de emprestimo:")
+	leia(valordeemprestimo)
+	escreva("Digite as prestacoes:")
+	leia(numerodeprestacoes)
+	escreva("Digite seu limitedeprestacoes:")
+	leia(limitedeprestacoes)
+	escreva("Digite seu valorprestacao:")
+	leia(valorprestacao)
+	//Calcúlo
+	numerodeprestacoes= numerodeprestacoes/ numerodeprestacoes
+	limitedovalordoemprestimo = rendamensal*10
+	limitedovalordoemprestimo = rendamensal*0.3
+	
+	//Verificar estrutura condicional
+	se (valordeemprestimo <=limitedeprestacoes){
+		escreva("\nEmpréstimo realizado")}
+	
+	senao
+		escreva("\nEmpréstimo não realizado")
+	}
+}
+
+
